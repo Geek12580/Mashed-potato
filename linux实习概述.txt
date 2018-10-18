@@ -1,0 +1,30 @@
+
+Frequently used Linux orders that I know(Personal summary):
+
+sudo adduser<user>              --create user
+sudo groupadd<group>            --create user_group
+cd ..                --back to the upper directory
+cd /opt/anhy/          --change directory from current path to the specified directory
+sudo su         --change user from current one to super administrator
+dpkg -i toec.deb          --install .deb package on the machine
+dpkg -l|grep com.rising.antivirus           --fuzzy query the .deb application installed on the machine
+dpkg -P com.rising.antivirus        --uninstall .deb application totally from the machine(configuration files included)
+dpkg -r com.rising.antivirus         --uninstall .dec application from the machine(configuration files saved)
+cat /etc/hosts            --viewing text file and get it shown on the command line(readonly)
+vim /etc/hosts           --viewing text file and get it shown on the command line(editable\\   prerequisite: vim edditor(different version) has already installed)
+cp hosts /etc/hosts          --copy files from A path to B path(particularly when the A equals to B,it can realize the rename of the file)
+mv hosts /etc/hosts            --move files from A path to B path(particularly when the A equals to B,it can realize the remove of the file)
+rm hosts           --remove files from current path
+power off         --shut down the machine
+reboot           -- get the machine restart
+ssh kylin @10.20.11.8             --(establish the remote connection with other machines that in the same LAN .Reminder:The default user is root if no user is 
+specified)
+scp -r local_foler remote_username@remote_ip:remote folder(e.g. scp -r picture001 kylin@10.20.15.11: /opt/anhy/)         --(use secure copy to realize remote copy
+among the same LAN,theoretically feasible with different LANs when the gateway stuff is solved)
+sudo adduser user1 group1       --(binding the user with user_group)
+ll / ls -l            --(viewing file list of the current directory)
+chmod -R 777  file.txt     --(change file's permissions,that is to say,modify 'read' 'write' 'executable' permission.Moreover,-R refrences to recursive dispatch,
+take note  R mentioned above the context is supposed to be in upper case cause command of Debian Linux is case sensitive)
+chown -R user1 tencent      --(change the user of file)
+chgrp -R group1 tencent       --(change the group of the file belong to)
+mkdir directory1              --(make a new directory named directory1)
